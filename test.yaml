@@ -1,6 +1,6 @@
 🚀 My DevOps Learning Journey: Building a CI/CD Pipeline from Scratch
 
-Over the past few weeks, I’ve immersed myself in DevOps practices by building an end-to-end CI/CD pipeline to deploy a React app to Kubernetes (Minikube). Here’s what I’ve learned:
+Over the past few weeks, I’ve immersed myself in DevOps practices by building an end-to-end CI/CD pipeline to deploy a React app to Kubernetes (Minikube). Here’s what I’ve learned: we are here
 
 🔧 Tech Stack & Challenges
 Docker: Containerized the React app, optimized builds with multi-stage layers.
