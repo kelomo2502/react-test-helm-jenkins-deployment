@@ -1,0 +1,32 @@
+🚀 My DevOps Learning Journey: Building a CI/CD Pipeline from Scratch
+
+Over the past few weeks, I’ve immersed myself in DevOps practices by building an end-to-end CI/CD pipeline to deploy a React app to Kubernetes (Minikube). Here’s what I’ve learned:
+
+🔧 Tech Stack & Challenges
+Docker: Containerized the React app, optimized builds with multi-stage layers.
+
+Helm: Managed Kubernetes deployments, fixed YAML templating issues, and configured atomic rollbacks.
+
+Jenkins: Automated the pipeline, debugged workspace path issues, and secured credentials.
+
+Kubernetes: Diagnosed pod failures, configured probes, and set resource limits.
+
+💡 Key Takeaways
+✅ Debugging is a superpower – kubectl describe/logs and helm --debug saved me countless times.
+✅ Automation prevents headaches – Jenkins + Helm made deployments repeatable and reliable.
+✅ Probes are critical – Without proper readiness/liveness checks, pods fail silently.
+
+🚀 What’s Next?
+Expand to AWS/GKE for cloud deployments
+
+Integrate ArgoCD for GitOps
+
+Add security scanning (Trivy, Snyk)
+
+This hands-on experience solidified my understanding of infrastructure as code, CI/CD best practices, and Kubernetes orchestration. Excited to keep learning—next stop, scaling in production!
+
+🔗 Project Repo | #DevOps #Kubernetes #CICD #CloudComputing
+
+Open to discussions, collaborations, or opportunities in DevOps! 👇
+
+Why This Works for LinkedIn
