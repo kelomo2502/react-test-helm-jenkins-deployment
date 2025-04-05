@@ -1,6 +1,6 @@
 # react-test-helm-jenkins-deployment/
 
-    myhelmChart/   #help chart repo
+    myappchart/   #help chart repo
       charts/
       templates/
       Chart.yaml
