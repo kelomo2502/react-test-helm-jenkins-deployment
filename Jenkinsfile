@@ -4,7 +4,7 @@ pipeline {
     DOCKERHUB_USERNAME = "kelomo2502"
     APP_NAME = "webapp"
     K8S_NAMESPACE = "webapp-prod"
-    HELM_TIMEOUT = "300s"  // 5-minute timeout
+    HELM_TIMEOUT = "300s"  
   }
   
   stages {
@@ -27,6 +27,9 @@ pipeline {
     }
     
     stage('Push to DockerHub') {
+      options {
+                timeout(time: 5, unit: 'MINUTES') 
+            }
       steps {
         withCredentials([usernamePassword(
           credentialsId: 'dockerhub-creds',
