@@ -1,6 +1,6 @@
 import {patients} from "../data"
 
-const PatientList = () => {
+const PatientList = ({patients}) => {
   return (
     <div className="patient-list">
       <h2>Hospital Patients</h2>

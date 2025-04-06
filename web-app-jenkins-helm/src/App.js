@@ -1,12 +1,23 @@
 import logo from './logo.svg';
-import React from 'react'
-import PatientList from "./pages/PatientList"
+import React, {useState} from 'react'
+import patientsData from "./data/patients"
+import PatientForm from "./components/PatientForm"
+import PatientList from './components/PatientList';
 
 const App = () => {
+  const [patients, setPatients]= useState(patientsData)
+  console.log(patients)
+
+  const  addPatient =(newPatient)=>{
+    setPatients([...patients,newPatient])
+  }
+  
   return (
-    <div className='flex justify-center bg-blue-600'>
-      <PatientList/>
-    </div>
+    <section>
+      <PatientForm onAddPatient={addPatient}/>
+      <PatientList patients={patients}/>
+     
+    </section>
   )
 }
 
