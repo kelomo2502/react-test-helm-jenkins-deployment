@@ -4,7 +4,7 @@ const PatientList = () => {
   return (
     <div className="patient-list">
       <h2>Hospital Patients</h2>
-      <table>
+      <table className="table-auto bg-red">
         <thead>
           <tr>
             <th>ID</th>

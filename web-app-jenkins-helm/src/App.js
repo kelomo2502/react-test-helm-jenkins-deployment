@@ -4,7 +4,7 @@ import PatientList from "./pages/PatientList"
 
 const App = () => {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center bg-blue-600'>
       <PatientList/>
     </div>
   )
