@@ -20,6 +20,7 @@ const PatientForm = ({onAddPatient}) => {
             id: Date.now(),
             ...formData,
             age: Number(formData.age)
+            
         }
         onAddPatient(newPatient)
         setFormData({

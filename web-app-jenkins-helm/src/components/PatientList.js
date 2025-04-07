@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 
+
 const PatientList = ({patients}) => {
+   
 
     return(
         <div>

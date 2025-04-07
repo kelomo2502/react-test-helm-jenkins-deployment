@@ -18,7 +18,7 @@ const patients = [
       gender: "Female",
       address: "456 Elm Street"
     },
-    // ... add 18 more
+   
   ];
   
   export default patients;

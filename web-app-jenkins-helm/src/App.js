@@ -6,7 +6,11 @@ import PatientList from './components/PatientList';
 
 const App = () => {
   const [patients, setPatients]= useState(patientsData)
-  console.log(patients)
+
+  React.useEffect(() => {
+    console.log("Current patient IDs:", patients.map(p => p.id));
+    console.log("Current length:", patients.length);
+}, [patients]); // Runs whenever patients prop changes
 
   const  addPatient =(newPatient)=>{
     setPatients([...patients,newPatient])
@@ -14,7 +18,7 @@ const App = () => {
   
   return (
     <section>
-      <PatientForm onAddPatient={addPatient}/>
+      <PatientForm onAddPatient={addPatient} />
       <PatientList patients={patients}/>
      
     </section>
